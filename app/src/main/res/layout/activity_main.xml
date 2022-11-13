@@ -30,15 +30,16 @@
                 android:text="@string/white"
                 android:contentDescription="@string/white"
                 android:onClick="onClickWhite"
-                />
+                tools:ignore="UsingOnClickInXml" />
             <Button
                 android:id="@+id/redButton"
                 android:layout_width = "wrap_content"
                 android:layout_height = "wrap_content"
+                android:layout_marginStart="10dp"
                 android:text = "@string/red"
                 android:contentDescription="@string/red"
                 android:onClick="onClickRed"
-                />
+                tools:ignore="UsingOnClickInXml" />
             <Button
                 android:id="@+id/blueButton"
                 android:layout_width="wrap_content"
@@ -47,7 +48,7 @@
                 android:text="@string/blue"
                 android:contentDescription="@string/blue"
                 android:onClick="onClickBlue"
-                />
+                tools:ignore="UsingOnClickInXml" />
             <Button
                 android:id="@+id/greenButton"
                 android:layout_width="wrap_content"
@@ -56,7 +57,7 @@
                 android:text="@string/green"
                 android:contentDescription="@string/green"
                 android:onClick="onClickGreen"
-                />
+                tools:ignore="UsingOnClickInXml" />
             <Button
                 android:id="@+id/purpleButton"
                 android:layout_width="wrap_content"
@@ -65,8 +66,7 @@
                 android:text="@string/purple"
                 android:contentDescription="@string/purple"
                 android:onClick="onClickPurple"
-                />
-
+                tools:ignore="UsingOnClickInXml" />
         </LinearLayout>
 
     </HorizontalScrollView>
