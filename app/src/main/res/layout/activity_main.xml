@@ -2,28 +2,73 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainArea"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:orientation="horizontal"
+    android:background="@color/white"
+    >
 
-    <TextView
-        android:layout_width="wrap_content"
+    <HorizontalScrollView
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        />
+        android:layout_gravity="bottom"
+        android:background="@color/black"
+        android:padding="2dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
 
-    <Button
-        android:layout_width = "wrap_content"
-        android:layout_height = "wrap_content"
-        android:padding="12dp"
-        android:text = "Red"
-        />
+            <Button
+                android:id="@+id/whiteButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/white"
+                android:contentDescription="@string/white"
+                android:onClick="onClickWhite"
+                />
+            <Button
+                android:id="@+id/redButton"
+                android:layout_width = "wrap_content"
+                android:layout_height = "wrap_content"
+                android:text = "@string/red"
+                android:contentDescription="@string/red"
+                android:onClick="onClickRed"
+                />
+            <Button
+                android:id="@+id/blueButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/blue"
+                android:contentDescription="@string/blue"
+                android:onClick="onClickBlue"
+                />
+            <Button
+                android:id="@+id/greenButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/green"
+                android:contentDescription="@string/green"
+                android:onClick="onClickGreen"
+                />
+            <Button
+                android:id="@+id/purpleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/purple"
+                android:contentDescription="@string/purple"
+                android:onClick="onClickPurple"
+                />
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:padding="12dp"
-        android:text="Blue"
-        />
+        </LinearLayout>
+
+    </HorizontalScrollView>
 
 </LinearLayout>
