@@ -63,6 +63,22 @@ public class MainActivity extends AppCompatActivity {
         Button button = findViewById(R.id.purpleButton);
         changeColor((String) button.getContentDescription(), R.color.purple);
     }
+    public void onClickYellow(View view) {
+        Button button = findViewById(R.id.yellowButton);
+        changeColor((String) button.getContentDescription(), R.color.yellow);
+    }
+    public void onClickPink(View view) {
+        Button button = findViewById(R.id.pinkButton);
+        changeColor((String) button.getContentDescription(), R.color.pink);
+    }
+    public void onClickGray(View view) {
+        Button button = findViewById(R.id.grayButton);
+        changeColor((String) button.getContentDescription(), R.color.gray);
+    }
+    public void onClickAqua(View view) {
+        Button button = findViewById(R.id.aquaButton);
+        changeColor((String) button.getContentDescription(), R.color.aqua);
+    }
 
     public void changeColor(String color, int colorId) {
         final LinearLayout ly = findViewById(R.id.mainArea);

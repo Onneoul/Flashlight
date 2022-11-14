@@ -67,6 +67,43 @@
                 android:contentDescription="@string/purple"
                 android:onClick="onClickPurple"
                 tools:ignore="UsingOnClickInXml" />
+            <Button
+                android:id="@+id/yellowButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/yellow"
+                android:contentDescription="@string/yellow"
+                android:onClick="onClickYellow"
+                tools:ignore="UsingOnClickInXml" />
+            <Button
+                android:id="@+id/pinkButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/pink"
+                android:contentDescription="@string/pink"
+                android:onClick="onClickPink"
+                tools:ignore="UsingOnClickInXml" />
+            <Button
+                android:id="@+id/grayButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/gray"
+                android:contentDescription="@string/gray"
+                android:onClick="onClickGray"
+                tools:ignore="UsingOnClickInXml" />
+            <Button
+                android:id="@+id/aquaButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@string/aqua"
+                android:contentDescription="@string/aqua"
+                android:onClick="onClickAqua"
+                tools:ignore="UsingOnClickInXml" />
+
         </LinearLayout>
 
     </HorizontalScrollView>
